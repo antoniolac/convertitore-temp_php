@@ -33,8 +33,8 @@
 
     <br><br>
 
-    <?php
-    //array assocativo & formule conversione
+<?php
+    //array assoc. e formule conversione
     $conversioni = [
         'C' => [
             'F' => fn($t) => ($t * 9/5) + 32,
@@ -50,13 +50,13 @@
         ]
     ];
 
-    //se converti è pieno fa controllo su input altrimenti è vuoto
+    // se converti è pieno fa controllo su input altrimenti è vuoto
     echo isset($_POST['converti'])
         ? (
             (is_numeric(str_replace(',', '.', $_POST['temp'])))
                 ? (
                     ($_POST['from'] == $_POST['to'])
-                        ? "nessuna conversione"
+                        ? "Nessuna conversione"
                         : (
                             isset($conversioni[$_POST['from']][$_POST['to']])
                                 ? "Risultato: " . $_POST['temp'] . "° " . $_POST['from'] . " = " .
@@ -68,6 +68,25 @@
         )
         : "";
 
-    ?>
+    // gestione log
+    $ip = $_SERVER['REMOTE_ADDR'] ?? 'IP sconosciuto';
+    $porta = $_SERVER['REMOTE_PORT'] ?? 'Porta sconosciuta';
+    $dataOra = date('Y-m-d H:i:s');
+
+    // temperatura + unità
+    $tempInserita = isset($_POST['temp']) ? $_POST['temp'] : 'N/A';
+    $unita = isset($_POST['from']) ? $_POST['from'] : '';
+
+    // log dettagliato
+    $log = "Accesso il $dataOra da IP: $ip, Porta: $porta, Temperatura inserita: {$tempInserita}°{$unita}\n\n";
+
+
+
+    $handler = fopen('data/log.txt', 'a');
+    fwrite($handler, $log);
+    fclose($handler);
+?>
+
+
 </body>
 </html>

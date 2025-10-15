@@ -1,0 +1,17 @@
+Accesso il 2025-10-15 09:28:23 da IP: 172.17.0.1, Porta: 43890
+, temperatura ambiente; Accesso il 2025-10-15 09:31:01 da IP: 172.17.0.1, Porta: 51124
+, temperatura ambiente:Accesso il 2025-10-15 09:31:02 da IP: 172.17.0.1, Porta: 51124
+, temperatura ambiente:Accesso il 2025-10-15 09:31:02 da IP: 172.17.0.1, Porta: 51124
+, temperatura ambiente:Accesso il 2025-10-15 09:31:03 da IP: 172.17.0.1, Porta: 51124
+, temperatura ambiente:Accesso il 2025-10-15 09:33:04 da IP: 172.17.0.1, Porta: 48028, Temperatura inserita: N/A
+
+Accesso il 2025-10-15 09:33:05 da IP: 172.17.0.1, Porta: 48028, Temperatura inserita: N/A
+
+Accesso il 2025-10-15 09:33:12 da IP: 172.17.0.1, Porta: 48044, Temperatura inserita: 88
+
+Accesso il 2025-10-15 09:36:52 da IP: 172.17.0.1, Porta: 45186, Temperatura inserita: 88°F
+
+Accesso il 2025-10-15 09:36:54 da IP: 172.17.0.1, Porta: 45186, Temperatura inserita: N/A°
+
+Accesso il 2025-10-15 09:36:59 da IP: 172.17.0.1, Porta: 45186, Temperatura inserita: 88°C
+
